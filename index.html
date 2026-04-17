@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fina Fred Technologies LLC</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+    background: linear-gradient(180deg, #0b0f1a 0%, #0f172a 100%);
+    color: #e6edf3;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: rgba(11,15,26,0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO CENTERED */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.03);
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border: 1px solid rgba(56,189,248,0.4);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #94a3b8;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 80px 50px;
+}
+
+.footer-card {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer strong {
+    color: #e2e8f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .grid, .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>Fina Fred Technologies</strong></div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#operations">Operations</a>
+        <a href="#founder">Founder</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-container">
+        <h1>AI Education & Digital Systems</h1>
+        <p>
+            Fina Fred Technologies LLC operates as a fully remote digital company 
+            focused on artificial intelligence education, content production, 
+            and scalable online systems.
+            <br><br>
+            All activities are conducted internationally through cloud-based platforms, 
+            enabling complete location independence.
+        </p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <div class="container">
+        <h2>Company Overview</h2>
+
+        <div class="card">
+            <p>
+                Fina Fred Technologies LLC is a U.S.-registered company used to structure 
+                digital professional activities in the fields of AI education, content 
+                creation, and online business systems.
+                <br><br>
+                The company operates entirely online, without physical offices, 
+                serving a global audience through digital platforms.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- OPERATIONS -->
+<div class="section" id="operations">
+    <div class="container">
+        <h2>Core Operations</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Content Creation</h3>
+                <ul>
+                    <li>Production of AI-focused educational videos</li>
+                    <li>Recording, editing, and publishing workflows</li>
+                    <li>Continuous content optimization</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Platform Growth</h3>
+                <ul>
+                    <li>Audience development and analytics tracking</li>
+                    <li>Content positioning and performance monitoring</li>
+                    <li>Strategy refinement based on data</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Education Systems</h3>
+                <ul>
+                    <li>Development of structured online courses</li>
+                    <li>Management of digital communities</li>
+                    <li>Student support and content updates</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Monetization</h3>
+                <ul>
+                    <li>Online course sales</li>
+                    <li>Subscription platforms</li>
+                    <li>Affiliate and partnership systems</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOUNDER -->
+<div class="section" id="founder">
+    <div class="container">
+        <h2>About the Founder</h2>
+
+        <div class="card">
+            <p>
+                Iñaki Marzo Díaz is a digital content creator and online educator 
+                specializing in artificial intelligence tools, digital business systems, 
+                and scalable online education models.
+                <br><br>
+                His work focuses on creating structured educational content, developing 
+                training programs, and building digital ecosystems that allow individuals 
+                to leverage AI and online platforms to grow their own businesses.
+                <br><br>
+                All professional activities are conducted remotely through international 
+                platforms, serving a global audience.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-card">
+
+        <div class="footer-grid">
+
+            <div>
+                <p><strong>Fina Fred Technologies LLC</strong></p>
+                <p>
+                    Wyoming Limited Liability Company<br>
+                    5830 E 2nd St Ste 7000 #33939<br>
+                    Casper, WY 82609, USA
+                </p>
+            </div>
+
+            <div>
+                <p><strong>Founder</strong></p>
+                <p>
+                    Iñaki Marzo Díaz<br>
+                    Digital Content Creator & Educator
+                </p>
+            </div>
+
+        </div>
+
+        <p style="margin-top:30px; text-align:center;">
+            © 2026 Fina Fred Technologies LLC — All Rights Reserved
+        </p>
+
+    </div>
+</div>
+
+</body>
+</html>
