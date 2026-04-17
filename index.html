@@ -45,7 +45,7 @@ body {
     color: #38bdf8;
 }
 
-/* HERO CENTERED */
+/* HERO */
 .hero {
     height: 80vh;
     display: flex;
@@ -89,11 +89,6 @@ body {
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.05);
     margin-bottom: 20px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    border: 1px solid rgba(56,189,248,0.4);
 }
 
 h2 {
@@ -121,6 +116,46 @@ li {
     gap: 20px;
 }
 
+/* CONTACT FORM */
+.contact-form {
+    max-width: 600px;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+    background: #020617;
+    color: #e6edf3;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: #64748b;
+}
+
+textarea.input {
+    height: 120px;
+    resize: none;
+}
+
+.button {
+    background: #ff5a0f;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #c2410c;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+}
+
 /* FOOTER */
 .footer {
     padding: 80px 50px;
@@ -144,7 +179,6 @@ li {
 .footer p {
     color: #64748b;
     font-size: 14px;
-    line-height: 1.6;
 }
 
 .footer strong {
@@ -155,10 +189,6 @@ li {
 @media (max-width: 800px) {
     .grid, .footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 34px;
     }
 }
 </style>
@@ -173,7 +203,9 @@ li {
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#operations">Operations</a>
+        <a href="#tools">Tools</a>
         <a href="#founder">Founder</a>
+        <a href="#contact">Contact</a>
     </div>
 </div>
 
@@ -193,12 +225,10 @@ li {
 <div class="section" id="about">
     <div class="container">
         <h2>Company Overview</h2>
-
         <div class="card">
             <p>
-                Fina Fred Technologies LLC is a U.S.-registered company used to structure 
-                digital professional activities in the fields of AI education, content 
-                creation, and online business systems.
+                Fina Fred Technologies LLC structures digital business activities 
+                in AI education, content creation, and scalable online systems.
             </p>
         </div>
     </div>
@@ -208,45 +238,52 @@ li {
 <div class="section" id="operations">
     <div class="container">
         <h2>Core Operations</h2>
-
         <div class="grid">
-
             <div class="card">
                 <h3>Content Creation</h3>
                 <ul>
-                    <li>Production of AI-focused educational videos</li>
-                    <li>Recording, editing, and publishing workflows</li>
-                    <li>Continuous content optimization</li>
+                    <li>AI educational videos</li>
+                    <li>Recording & editing</li>
+                    <li>Publishing workflows</li>
                 </ul>
             </div>
-
             <div class="card">
                 <h3>Platform Growth</h3>
                 <ul>
-                    <li>Audience development and analytics tracking</li>
-                    <li>Content positioning and performance monitoring</li>
-                    <li>Strategy refinement based on data</li>
+                    <li>Analytics tracking</li>
+                    <li>Audience growth</li>
+                    <li>Optimization strategies</li>
                 </ul>
             </div>
-
             <div class="card">
                 <h3>Education Systems</h3>
                 <ul>
-                    <li>Development of structured online courses</li>
-                    <li>Management of digital communities</li>
-                    <li>Student support and content updates</li>
+                    <li>Online courses</li>
+                    <li>Communities</li>
+                    <li>Training systems</li>
                 </ul>
             </div>
-
             <div class="card">
                 <h3>Monetization</h3>
                 <ul>
-                    <li>Online course sales</li>
-                    <li>Subscription platforms</li>
-                    <li>Affiliate and partnership systems</li>
+                    <li>Course sales</li>
+                    <li>Subscriptions</li>
+                    <li>Affiliates</li>
                 </ul>
             </div>
+        </div>
+    </div>
+</div>
 
+<!-- TOOLS -->
+<div class="section" id="tools">
+    <div class="container">
+        <h2>Tools & Workflow</h2>
+        <div class="card">
+            <p>
+                Iñaki operates using digital tools that allow full remote work 
+                including content production, analytics, and online education systems.
+            </p>
         </div>
     </div>
 </div>
@@ -255,20 +292,26 @@ li {
 <div class="section" id="founder">
     <div class="container">
         <h2>About the Founder</h2>
-
         <div class="card">
             <p>
-                Iñaki Marzo Díaz is a digital content creator and online educator 
-                specializing in artificial intelligence tools, digital business systems, 
-                and scalable online education models.
-                <br><br>
-                His work focuses on creating structured educational content, developing 
-                training programs, and building digital ecosystems that allow individuals 
-                to leverage AI and online platforms to grow their own businesses.
-                <br><br>
-                All professional activities are conducted remotely through international 
-                platforms, serving a global audience.
+                Iñaki Marzo Díaz is a digital creator focused on AI education 
+                and scalable online business systems.
             </p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contact-form">
+            <input class="input" type="text" placeholder="Name">
+            <input class="input" type="email" placeholder="Email">
+            <textarea class="input" placeholder="What do you need?"></textarea>
+
+            <button class="button">Send</button>
         </div>
     </div>
 </div>
@@ -276,13 +319,10 @@ li {
 <!-- FOOTER -->
 <div class="footer">
     <div class="footer-card">
-
         <div class="footer-grid">
-
             <div>
                 <p><strong>Fina Fred Technologies LLC</strong></p>
                 <p>
-                    Wyoming Limited Liability Company<br>
                     5830 E 2nd St Ste 7000 #33939<br>
                     Casper, WY 82609, USA
                 </p>
@@ -290,18 +330,13 @@ li {
 
             <div>
                 <p><strong>Founder</strong></p>
-                <p>
-                    Iñaki Marzo Díaz<br>
-                    Digital Content Creator & Educator
-                </p>
+                <p>Iñaki Marzo Díaz</p>
             </div>
-
         </div>
 
         <p style="margin-top:30px; text-align:center;">
-            © 2026 Fina Fred Technologies LLC — All Rights Reserved
+            © 2026 Fina Fred Technologies LLC
         </p>
-
     </div>
 </div>
 
